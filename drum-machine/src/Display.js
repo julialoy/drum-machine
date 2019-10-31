@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Row from 'react-bootstrap/Row';
 
 class Display extends Component {
 
@@ -13,11 +12,9 @@ class Display extends Component {
       desc
     } = this.props;
     return (
-      <Row>
         <div id="display">
           {desc}
         </div>
-      </Row>
     );
   }
 }

@@ -4,7 +4,6 @@ import './App.css';
 import Container from 'react-bootstrap/Container';
 import DrumPads from './DrumPads';
 import Display from './Display';
-import Options from './Options';
 
 class App extends Component {
   state = {
@@ -55,7 +54,7 @@ class App extends Component {
         audio: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
       }
     ],
-    currentAudioDesc: "Testy test"
+    currentAudioDesc: ""
   };
 
   handleDisplayChange = (keyId) => {
@@ -68,9 +67,7 @@ class App extends Component {
     return (
       <Container id="drum-machine">
           <DrumPads pads={this.state.pads} onClickOrKey={this.handleDisplayChange} />
-          <Display desc={this.state.currentAudioDesc} />
-          <Options />
-        
+          <Display desc={this.state.currentAudioDesc} />      
       </Container>
   )};
 }

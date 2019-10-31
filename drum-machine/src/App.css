@@ -1,30 +1,35 @@
 body {
-  background-color: #8DB5DB;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 #drum-machine {
   display: flex;
   position: absolute;
-  height: 20rem;
-  width: auto;
+  flex-wrap: wrap;
+  height: 30rem;
+  width: 30rem;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   margin: auto;
   padding: 1rem;
-  padding-left: 1rem;
   border: .5rem solid white;
   border-radius: 5px;
   background-color: orange;
 }
 
+#drum-pads {
+  flex: 0 0 100%;
+  margin-left: 5rem;
+}
 
 .drum-pad {
   margin: .25rem;
   height: 5rem;
   width: 5rem;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
   background-color: gray;
   border-radius: 5px;
   box-shadow: 5px 2px 2px black;
@@ -32,11 +37,11 @@ body {
 }
 
 #display {
+  flex: 0 0 100%;
   background-color: white;
   height: 2rem;
   width: 20rem;
-  padding: .15rem;
-  margin-top: 5rem;
-  margin-left: 30rem;
+  padding: .15rem .15rem .15rem 10rem;
+  border-radius: 5px;
 }
 
